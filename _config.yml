@@ -4,7 +4,6 @@
 
 title: blank # the website title (if blank, full name will be used instead)
 first_name: Josh
-middle_name: R.
 last_name: Witt
 contact_note: >
   You can even add a little note about which of these is the best way to reach you.
@@ -208,7 +207,6 @@ keep_files:
 
 # Plug-ins
 plugins:
-  - jekyll-archives
   - jekyll-email-protect
   - jekyll-feed
   - jekyll-get-json
