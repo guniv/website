@@ -9,42 +9,21 @@ ninja.data = [{
     handler: () => {
       window.location.href = "/website/";
     },
-  },{id: "nav-projects",
-          title: "projects",
+  },{id: "nav-portfolio",
+          title: "portfolio",
           description: "A growing collection of your cool projects.",
           section: "Navigation",
           handler: () => {
-            window.location.href = "/website/projects/";
+            window.location.href = "/website/portfolio/";
           },
-        },{id: "nav-cv",
-          title: "cv",
+        },{id: "nav-résumé",
+          title: "résumé",
           description: "This is a description of the page. You can modify it in &#39;_pages/cv.md&#39;. You can also change or remove the top pdf download button.",
           section: "Navigation",
           handler: () => {
-            window.location.href = "/website/cv/";
+            window.location.href = "/website/resume/";
           },
-        },{id: "nav-teaching",
-          title: "teaching",
-          description: "Materials for courses you taught. Replace this text with your description.",
-          section: "Navigation",
-          handler: () => {
-            window.location.href = "/website/teaching/";
-          },
-        },{id: "nav-people",
-          title: "people",
-          description: "members of the lab or group",
-          section: "Navigation",
-          handler: () => {
-            window.location.href = "/website/people/";
-          },
-        },{id: "dropdown-projects",
-              title: "projects",
-              description: "",
-              section: "Dropdown",
-              handler: () => {
-                window.location.href = "";
-              },
-            },{id: "projects-project-1",
+        },{id: "projects-project-1",
           title: 'project 1',
           description: "with background image",
           section: "Projects",handler: () => {
