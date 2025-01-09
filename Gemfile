@@ -19,6 +19,7 @@ group :jekyll_plugins do
     gem 'jekyll-toc'
     gem 'jekyll-twitter-plugin'
     gem 'jemoji'
+    gem 'jekyll-pdf-embed'
 end
 group :other_plugins do
     gem 'css_parser'
