@@ -19,7 +19,13 @@ group :jekyll_plugins do
     gem 'jekyll-toc'
     gem 'jekyll-twitter-plugin'
     gem 'jemoji'
+    # Specify the source for jekyll-pdf-embed
+    source "https://rubygems.pkg.github.com/mihajlonesic" do
+        gem 'jekyll-pdf-embed', "1.1.1"
+    end
 end
+
+
 group :other_plugins do
     gem 'css_parser'
     gem 'feedjira'
