@@ -25,7 +25,7 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: write
+  contents: write  # Ensures write access to repository contents
 
 jobs:
   deploy:
@@ -40,6 +40,10 @@ jobs:
           ruby-version: "3.3.5"
           bundler-cache: false
 
+      - name: Set up Authentication for GitHub Package Registry
+        run: |
+          bundle config set --global rubygems.pkg.github.com ${GITHUB_ACTOR}:${{ secrets.RUBYGEMS_AUTH_TOKEN }}
+          
       - name: Disable Bundler frozen mode
         run: |
           bundle config set --local frozen false
@@ -55,6 +59,7 @@ jobs:
           bundle install --jobs 4
           git add Gemfile.lock
           git commit -m "Regenerate Gemfile.lock" || echo "No changes to commit"
+          git push https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }} HEAD:${{ github.ref }}
 
       - name: Build Jekyll Site
         run: |
