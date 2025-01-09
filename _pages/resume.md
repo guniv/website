@@ -1,5 +1,5 @@
 ---
-layout: cv
+layout: default
 permalink: /resume/
 title: Résumé
 nav: true
@@ -9,3 +9,4 @@ description: This is a description of the page. You can modify it in '_pages/cv.
 toc:
   sidebar: left
 ---
+
