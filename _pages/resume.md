@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: resume
 permalink: /resume/
 title: Résumé
 nav: true
@@ -10,4 +10,4 @@ toc:
   sidebar: left
 ---
 
- {% pdf "/../website/assets/pdf/Résumé.pdf" %}
+ {% pdf "/../website/assets/pdf/Résumé.pdf" height=1150px %}
