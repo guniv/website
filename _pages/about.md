@@ -11,7 +11,7 @@ profile:
 
 news: true # includes a list of news items
 social: true # includes social icons at the bottom of the page
-display_categories: [featured]
+display_categories: [featured work]
 horizontal: false
 ---
 
