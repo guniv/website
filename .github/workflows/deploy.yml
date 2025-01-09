@@ -38,22 +38,27 @@ jobs:
         uses: ruby/setup-ruby@v1
         with:
           ruby-version: "3.3.5"
-          bundler-cache: true
+          bundler-cache: false
 
       - name: Disable Bundler frozen mode
         run: |
           bundle config set --local frozen false
           bundle config unset deployment
 
-      - name: Clear Bundler cache (Optional)
-        run: rm -rf /home/runner/work/website/website/vendor/bundle
+      - name: Clear Previous Bundler Cache
+        run: rm -rf ./vendor/bundle
 
-      - name: Install Dependencies and Build 🔧
+      - name: Install Dependencies and Generate Lock File 🔧
         run: |
           sudo apt-get update && sudo apt-get install -y imagemagick
           pip3 install --upgrade nbconvert
-          export JEKYLL_ENV=production
           bundle install --jobs 4
+          git add Gemfile.lock
+          git commit -m "Regenerate Gemfile.lock" || echo "No changes to commit"
+
+      - name: Build Jekyll Site
+        run: |
+          export JEKYLL_ENV=production
           bundle exec jekyll build
 
       - name: Purge unused CSS 🧹
