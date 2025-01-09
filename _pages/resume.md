@@ -10,3 +10,4 @@ toc:
   sidebar: left
 ---
 
+ {% pdf "/../assets/pdf/Résumé.pdf" %}
