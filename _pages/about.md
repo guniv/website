@@ -145,10 +145,9 @@ In 2019, I graduated from the University of Tennessee with a bachelor of science
     border: none; /* Remove left border */
     margin: 0; /* Reset margins */
     padding: 0; /* Reset padding */
-    font-style: italic; /* Keep quotes italicized */
     font-size: inherit; /* Match carousel typography */
     line-height: 1.6;
-    color: var(--global-text-color-light); /* Use theme's lighter text color */
+    color: var(--global-text-color); /* Use theme's lighter text color */
   }
 
   #testimonial-carousel blockquote p {
