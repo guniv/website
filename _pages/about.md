@@ -111,38 +111,6 @@ In 2019, I graduated from the University of Tennessee with a bachelor of science
 
 <!-- Testimonial Carousel CSS -->
 <style>
-blockquote {
-  background: var(--global-bg-color);
-  margin: 1.5em 0;
-  padding: 1em;
-  font-size: 1.2rem;
-
-  p {
-    margin-bottom: 0;
-  }
-
-  /* Tips, warnings, and dangers blockquotes */
-  &.block-tip {
-    border-color: var(--global-tip-block);
-    background-color: var(--global-tip-block-bg);
-
-    em,
-    li,
-    p,
-    strong {
-      color: var(--global-tip-block-text);
-    }
-
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6 {
-      color: var(--global-tip-block-title);
-    }
-  }
-
   #testimonial-carousel {
     position: relative;
     width: 100%;
