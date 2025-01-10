@@ -121,7 +121,7 @@ In 2019, I graduated from the University of Tennessee with a bachelor of science
     width: 100%;
     max-width: 800px;
     margin: 40px auto;
-    overflow: visible; /* Ensure arrows remain visible */
+    overflow: hidden; /* Contain the text and arrows inside the carousel */
     text-align: center;
     font-family: var(--global-font-family);
     background-color: var(--global-background-color);
@@ -131,7 +131,7 @@ In 2019, I graduated from the University of Tennessee with a bachelor of science
 
   .carousel-content {
     position: relative;
-    padding: 20px 40px; /* Add space for the arrows */
+    padding: 20px 40px; /* Add space for arrows */
     box-sizing: border-box; /* Ensure padding doesn’t affect width */
   }
 
@@ -144,6 +144,25 @@ In 2019, I graduated from the University of Tennessee with a bachelor of science
   .carousel-item.active {
     display: block;
     opacity: 1;
+  }
+
+  .carousel-item blockquote {
+    background: none; /* Remove theme background */
+    border: none; /* Remove the left border line */
+    font-style: italic; /* Retain italicized style */
+    font-size: inherit; /* Match carousel typography */
+    line-height: 1.6; /* Improve readability */
+    color: var(--global-text-color-light);
+    margin: 0; /* Remove default blockquote margin */
+    padding: 0; /* Remove extra padding */
+  }
+
+  .carousel-item cite {
+    display: block;
+    margin-top: 15px;
+    font-size: 1.1em;
+    font-weight: bold;
+    color: var(--global-theme-color); /* Match theme colors */
   }
 
   .carousel-arrow {
@@ -173,15 +192,19 @@ In 2019, I graduated from the University of Tennessee with a bachelor of science
 
   /* Responsive Adjustments */
   @media (max-width: 768px) {
+    #testimonial-carousel {
+      max-width: 100%; /* Ensure carousel fits smaller screens */
+    }
+
     .carousel-content {
-      padding: 20px 20px; /* Adjust padding for smaller screens */
+      padding: 10px 20px; /* Reduce padding for smaller screens */
     }
 
     #prev-arrow,
     #next-arrow {
-      font-size: 1.5rem; /* Scale down the arrow size */
+      font-size: 1.5rem; /* Scale down arrow size */
       left: 5px;
-      right: 5px; /* Keep them close to edges */
+      right: 5px; /* Keep arrows close to the edges */
     }
   }
 
