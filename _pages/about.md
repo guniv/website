@@ -119,7 +119,7 @@ In 2019, I graduated from the University of Tennessee with a bachelor of science
     overflow: hidden;
     text-align: center;
     font-family: var(--global-font-family);
-    background-color: var(--global-background-color); /* Match theme background */
+    background-color: var(--global-background-color);
     border-radius: var(--global-border-radius, 8px);
     box-shadow: var(--global-box-shadow);
   }
@@ -140,13 +140,15 @@ In 2019, I graduated from the University of Tennessee with a bachelor of science
     opacity: 1;
   }
 
-  .carousel-item blockquote {
-    font-size: 1.5em;
-    font-style: italic;
-    color: var(--global-text-color-light);
-    margin: 0;
-    padding: 0;
+  #testimonial-carousel blockquote {
+    background: none; /* Remove the default blockquote background */
+    border: none; /* Remove the left border */
+    margin: 0; /* Reset margins for proper alignment */
+    padding: 0; /* Reset padding */
+    font-style: italic; /* Keep the italic style for quotes */
+    font-size: inherit; /* Match carousel typography */
     line-height: 1.6;
+    color: var(--global-text-color-light);
   }
 
   .carousel-item cite {
