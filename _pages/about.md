@@ -115,16 +115,16 @@ In 2019, I graduated from the University of Tennessee with a bachelor of science
   });
 </script>
 
-<!-- Carousel CSS -->
+<!-- Testimonial Carousel CSS -->
 <style>
-  .carousel {
+  #testimonial-carousel {
     position: relative;
     width: 100%;
-    max-width: 600px;
-    margin: 20px auto;
+    max-width: 800px;
+    margin: 40px auto;
     overflow: hidden;
     text-align: center;
-    font-family: Arial, sans-serif;
+    font-family: var(--global-font-family, Arial, sans-serif);
   }
 
   .carousel-content {
@@ -133,22 +133,24 @@ In 2019, I graduated from the University of Tennessee with a bachelor of science
 
   .carousel-item {
     display: none;
+    opacity: 0;
     transition: opacity 0.5s ease-in-out;
   }
 
   .carousel-item blockquote {
     font-size: 1.5em;
     font-style: italic;
-    color: #333;
+    color: var(--global-text-color-light);
     margin: 0;
+    padding: 0;
   }
 
   .carousel-item cite {
     display: block;
-    margin-top: 10px;
-    font-size: 1em;
+    margin-top: 15px;
+    font-size: 1.1em;
     font-weight: bold;
-    color: #555;
+    color: var(--global-text-color);
   }
 
   .carousel-arrow {
@@ -160,7 +162,8 @@ In 2019, I graduated from the University of Tennessee with a bachelor of science
     font-size: 2rem;
     cursor: pointer;
     z-index: 10;
-    color: #333;
+    color: var(--global-theme-color);
+    transition: color 0.3s ease;
   }
 
   #prev-arrow {
@@ -172,7 +175,18 @@ In 2019, I graduated from the University of Tennessee with a bachelor of science
   }
 
   .carousel-arrow:hover {
-    color: #555;
+    color: var(--global-theme-color-dark);
+  }
+
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    #testimonial-carousel {
+      max-width: 100%;
+    }
+
+    .carousel-item blockquote {
+      font-size: 1.2em;
+    }
   }
 </style>
 
