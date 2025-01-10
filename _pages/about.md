@@ -121,7 +121,7 @@ In 2019, I graduated from the University of Tennessee with a bachelor of science
     width: 100%;
     max-width: 800px;
     margin: 40px auto;
-    overflow: hidden;
+    overflow: visible; /* Ensure arrows remain visible */
     text-align: center;
     font-family: var(--global-font-family);
     background-color: var(--global-background-color);
@@ -131,7 +131,7 @@ In 2019, I graduated from the University of Tennessee with a bachelor of science
 
   .carousel-content {
     position: relative;
-    padding: 20px 60px; /* Add space for arrows */
+    padding: 20px 40px; /* Add space for the arrows */
     box-sizing: border-box; /* Ensure padding doesn’t affect width */
   }
 
@@ -146,26 +146,6 @@ In 2019, I graduated from the University of Tennessee with a bachelor of science
     opacity: 1;
   }
 
-  .carousel-item blockquote {
-    max-width: 90%; /* Limit text width */
-    margin: 0 auto; /* Center-align */
-    word-wrap: break-word; /* Handle long words gracefully */
-    background: none; /* Remove theme background */
-    border: none; /* Remove theme border */
-    font-style: italic; /* Keep italicized style */
-    font-size: inherit; /* Match carousel typography */
-    line-height: 1.6; /* Improve readability */
-    color: var(--global-text-color-light);
-  }
-
-  .carousel-item cite {
-    display: block;
-    margin-top: 15px;
-    font-size: 1.1em;
-    font-weight: bold;
-    color: var(--global-theme-color); /* Match theme colors */
-  }
-
   .carousel-arrow {
     position: absolute;
     top: 50%;
@@ -174,30 +154,34 @@ In 2019, I graduated from the University of Tennessee with a bachelor of science
     border: none;
     font-size: 2rem;
     cursor: pointer;
-    z-index: 10;
+    z-index: 10; /* Ensure arrows are above content */
     color: var(--global-theme-color);
     transition: color 0.3s ease;
   }
 
   #prev-arrow {
-    left: -40px; /* Move outside content */
+    left: 10px; /* Position inside the carousel */
   }
 
   #next-arrow {
-    right: -40px; /* Move outside content */
+    right: 10px; /* Position inside the carousel */
+  }
+
+  .carousel-arrow:hover {
+    color: var(--global-theme-color-dark); /* Darken color on hover */
   }
 
   /* Responsive Adjustments */
   @media (max-width: 768px) {
     .carousel-content {
-      padding: 20px 30px; /* Reduce padding for smaller screens */
+      padding: 20px 20px; /* Adjust padding for smaller screens */
     }
 
     #prev-arrow,
     #next-arrow {
-      font-size: 1.5rem; /* Scale down arrow size */
-      left: 10px;
-      right: 10px; /* Move arrows closer to content */
+      font-size: 1.5rem; /* Scale down the arrow size */
+      left: 5px;
+      right: 5px; /* Keep them close to edges */
     }
   }
 
