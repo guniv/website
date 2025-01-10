@@ -131,7 +131,8 @@ In 2019, I graduated from the University of Tennessee with a bachelor of science
 
   .carousel-content {
     position: relative;
-    padding: 20px;
+    padding: 20px 60px; /* Add space for arrows */
+    box-sizing: border-box; /* Ensure padding doesn’t affect width */
   }
 
   .carousel-item {
@@ -145,21 +146,19 @@ In 2019, I graduated from the University of Tennessee with a bachelor of science
     opacity: 1;
   }
 
-  #testimonial-carousel blockquote {
-    background: none; /* Remove background */
-    border: none; /* Remove left border */
-    margin: 0; /* Reset margins */
-    padding: 0; /* Reset padding */
+  .carousel-item blockquote {
+    max-width: 90%; /* Limit text width */
+    margin: 0 auto; /* Center-align */
+    word-wrap: break-word; /* Handle long words gracefully */
+    background: none; /* Remove theme background */
+    border: none; /* Remove theme border */
+    font-style: italic; /* Keep italicized style */
     font-size: inherit; /* Match carousel typography */
-    line-height: 1.6;
-    color: var(--global-text-color); /* Use theme's lighter text color */
+    line-height: 1.6; /* Improve readability */
+    color: var(--global-text-color-light);
   }
 
-  #testimonial-carousel blockquote p {
-    margin-bottom: 0; /* Reset paragraph margins */
-  }
-
-  #testimonial-carousel blockquote cite {
+  .carousel-item cite {
     display: block;
     margin-top: 15px;
     font-size: 1.1em;
@@ -180,26 +179,25 @@ In 2019, I graduated from the University of Tennessee with a bachelor of science
     transition: color 0.3s ease;
   }
 
-  .carousel-arrow:hover {
-    color: var(--global-theme-color-dark);
-  }
-
   #prev-arrow {
-    left: 10px;
+    left: -40px; /* Move outside content */
   }
 
   #next-arrow {
-    right: 10px;
+    right: -40px; /* Move outside content */
   }
 
   /* Responsive Adjustments */
   @media (max-width: 768px) {
-    #testimonial-carousel {
-      max-width: 100%;
+    .carousel-content {
+      padding: 20px 30px; /* Reduce padding for smaller screens */
     }
 
-    .carousel-item blockquote {
-      font-size: 1.2em;
+    #prev-arrow,
+    #next-arrow {
+      font-size: 1.5rem; /* Scale down arrow size */
+      left: 10px;
+      right: 10px; /* Move arrows closer to content */
     }
   }
 
