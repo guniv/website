@@ -29,6 +29,153 @@ In 2019, I graduated from the University of Tennessee with a bachelor of science
 
 ---
 
+<!-- Testimonial Carousel -->
+<div id="testimonial-carousel" class="carousel">
+  <button id="prev-arrow" class="carousel-arrow">←</button>
+  <div class="carousel-content"></div>
+  <button id="next-arrow" class="carousel-arrow">→</button>
+</div>
+
+<!-- Inline Testimonials -->
+<script>
+  const testimonials = [
+    { "quote": "This is an amazing testimonial!", "author": "John Doe" },
+    { "quote": "I love this feature!", "author": "Jane Smith" },
+    { "quote": "Highly recommend it to everyone!", "author": "Sam Wilson" }
+  ];
+</script>
+
+<!-- Carousel JavaScript -->
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const prevArrow = document.getElementById("prev-arrow");
+    const nextArrow = document.getElementById("next-arrow");
+    const carouselContent = document.querySelector(".carousel-content");
+    let currentIndex = 0;
+    let autoScroll;
+
+    // Function to populate the carousel
+    function loadTestimonials() {
+      testimonials.forEach((testimonial, index) => {
+        const item = document.createElement("div");
+        item.classList.add("carousel-item");
+        if (index === 0) item.style.display = "block"; // Show the first item by default
+        item.innerHTML = `
+          <blockquote class="quote">"${testimonial.quote}"</blockquote>
+          <cite class="author">- ${testimonial.author}</cite>
+        `;
+        carouselContent.appendChild(item);
+      });
+
+      // Start auto-scrolling
+      startAutoScroll();
+    }
+
+    // Function to show a specific testimonial
+    function showTestimonial(index) {
+      const items = document.querySelectorAll(".carousel-item");
+      items.forEach((item, i) => {
+        item.style.display = i === index ? "block" : "none";
+      });
+    }
+
+    // Function to change the slide
+    function changeSlide(direction) {
+      currentIndex = (currentIndex + direction + testimonials.length) % testimonials.length;
+      showTestimonial(currentIndex);
+    }
+
+    // Start automatic scrolling
+    function startAutoScroll() {
+      autoScroll = setInterval(() => {
+        changeSlide(1); // Move to the next slide
+      }, 6000);
+    }
+
+    // Stop auto-scrolling
+    function stopAutoScroll() {
+      clearInterval(autoScroll);
+    }
+
+    // Event listeners for arrows
+    prevArrow.addEventListener("click", () => {
+      stopAutoScroll();
+      changeSlide(-1);
+      startAutoScroll(); // Restart auto-scrolling after user interaction
+    });
+
+    nextArrow.addEventListener("click", () => {
+      stopAutoScroll();
+      changeSlide(1);
+      startAutoScroll(); // Restart auto-scrolling after user interaction
+    });
+
+    // Load testimonials
+    loadTestimonials();
+  });
+</script>
+
+<!-- Carousel CSS -->
+<style>
+  .carousel {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto;
+    overflow: hidden;
+    text-align: center;
+    font-family: Arial, sans-serif;
+  }
+
+  .carousel-content {
+    position: relative;
+  }
+
+  .carousel-item {
+    display: none;
+    transition: opacity 0.5s ease-in-out;
+  }
+
+  .carousel-item blockquote {
+    font-size: 1.5em;
+    font-style: italic;
+    color: #333;
+    margin: 0;
+  }
+
+  .carousel-item cite {
+    display: block;
+    margin-top: 10px;
+    font-size: 1em;
+    font-weight: bold;
+    color: #555;
+  }
+
+  .carousel-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    z-index: 10;
+    color: #333;
+  }
+
+  #prev-arrow {
+    left: 10px;
+  }
+
+  #next-arrow {
+    right: 10px;
+  }
+
+  .carousel-arrow:hover {
+    color: #555;
+  }
+</style>
+
 <!-- pages/projects.md -->
 <div class="projects">
 {% if site.enable_project_categories and page.display_categories %}
