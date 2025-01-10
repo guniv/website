@@ -28,9 +28,8 @@ Outside of my professional work, I have also volunteered with robotics teams to 
 In 2019, I graduated from the University of Tennessee with a bachelor of science degree in communication, majoring in journalism and electronic media. With my diverse skill set and passion for communicating about science and technology, I am well-equipped to excel in a variety of roles in the fields of science writing, social media, and communications.
 
 ---
-
 <!-- Testimonial Carousel -->
-<div id="testimonial-carousel" class="carousel">
+<div id="testimonial-carousel" class="carousel rounded-lg shadow-md">
   <button id="prev-arrow" class="carousel-arrow">←</button>
   <div class="carousel-content"></div>
   <button id="next-arrow" class="carousel-arrow">→</button>
@@ -43,10 +42,7 @@ In 2019, I graduated from the University of Tennessee with a bachelor of science
     { "quote": "I love this feature!", "author": "Jane Smith" },
     { "quote": "Highly recommend it to everyone!", "author": "Sam Wilson" }
   ];
-</script>
 
-<!-- Carousel JavaScript -->
-<script>
   document.addEventListener("DOMContentLoaded", function () {
     const prevArrow = document.getElementById("prev-arrow");
     const nextArrow = document.getElementById("next-arrow");
@@ -54,45 +50,44 @@ In 2019, I graduated from the University of Tennessee with a bachelor of science
     let currentIndex = 0;
     let autoScroll;
 
-    // Function to populate the carousel
+    // Populate the carousel with testimonials
     function loadTestimonials() {
       testimonials.forEach((testimonial, index) => {
         const item = document.createElement("div");
         item.classList.add("carousel-item");
-        if (index === 0) item.style.display = "block"; // Show the first item by default
+        if (index === 0) {
+          item.classList.add("active"); // Make the first item visible
+        }
         item.innerHTML = `
           <blockquote class="quote">"${testimonial.quote}"</blockquote>
           <cite class="author">- ${testimonial.author}</cite>
         `;
         carouselContent.appendChild(item);
       });
-
-      // Start auto-scrolling
-      startAutoScroll();
+      startAutoScroll(); // Begin auto-scrolling
     }
 
-    // Function to show a specific testimonial
+    // Show a specific testimonial by index
     function showTestimonial(index) {
       const items = document.querySelectorAll(".carousel-item");
       items.forEach((item, i) => {
-        item.style.display = i === index ? "block" : "none";
+        item.classList.toggle("active", i === index);
       });
     }
 
-    // Function to change the slide
+    // Change slide based on direction
     function changeSlide(direction) {
       currentIndex = (currentIndex + direction + testimonials.length) % testimonials.length;
       showTestimonial(currentIndex);
     }
 
-    // Start automatic scrolling
+    // Automatic scrolling
     function startAutoScroll() {
       autoScroll = setInterval(() => {
         changeSlide(1); // Move to the next slide
       }, 6000);
     }
 
-    // Stop auto-scrolling
     function stopAutoScroll() {
       clearInterval(autoScroll);
     }
@@ -101,17 +96,16 @@ In 2019, I graduated from the University of Tennessee with a bachelor of science
     prevArrow.addEventListener("click", () => {
       stopAutoScroll();
       changeSlide(-1);
-      startAutoScroll(); // Restart auto-scrolling after user interaction
+      startAutoScroll();
     });
 
     nextArrow.addEventListener("click", () => {
       stopAutoScroll();
       changeSlide(1);
-      startAutoScroll(); // Restart auto-scrolling after user interaction
+      startAutoScroll();
     });
 
-    // Load testimonials
-    loadTestimonials();
+    loadTestimonials(); // Load testimonials on page load
   });
 </script>
 
@@ -124,17 +118,26 @@ In 2019, I graduated from the University of Tennessee with a bachelor of science
     margin: 40px auto;
     overflow: hidden;
     text-align: center;
-    font-family: var(--global-font-family, Arial, sans-serif);
+    font-family: var(--global-font-family);
+    background-color: var(--global-background-color); /* Match theme background */
+    border-radius: var(--global-border-radius, 8px);
+    box-shadow: var(--global-box-shadow);
   }
 
   .carousel-content {
     position: relative;
+    padding: 20px;
   }
 
   .carousel-item {
     display: none;
     opacity: 0;
-    transition: opacity 0.5s ease-in-out;
+    transition: opacity 0.5s var(--global-transition-ease, ease-in-out);
+  }
+
+  .carousel-item.active {
+    display: block;
+    opacity: 1;
   }
 
   .carousel-item blockquote {
@@ -143,6 +146,7 @@ In 2019, I graduated from the University of Tennessee with a bachelor of science
     color: var(--global-text-color-light);
     margin: 0;
     padding: 0;
+    line-height: 1.6;
   }
 
   .carousel-item cite {
@@ -150,7 +154,7 @@ In 2019, I graduated from the University of Tennessee with a bachelor of science
     margin-top: 15px;
     font-size: 1.1em;
     font-weight: bold;
-    color: var(--global-text-color);
+    color: var(--global-theme-color);
   }
 
   .carousel-arrow {
@@ -166,6 +170,10 @@ In 2019, I graduated from the University of Tennessee with a bachelor of science
     transition: color 0.3s ease;
   }
 
+  .carousel-arrow:hover {
+    color: var(--global-theme-color-dark);
+  }
+
   #prev-arrow {
     left: 10px;
   }
@@ -174,11 +182,7 @@ In 2019, I graduated from the University of Tennessee with a bachelor of science
     right: 10px;
   }
 
-  .carousel-arrow:hover {
-    color: var(--global-theme-color-dark);
-  }
-
-  /* Responsive adjustments */
+  /* Responsive Adjustments */
   @media (max-width: 768px) {
     #testimonial-carousel {
       max-width: 100%;
@@ -189,6 +193,7 @@ In 2019, I graduated from the University of Tennessee with a bachelor of science
     }
   }
 </style>
+
 
 <!-- pages/projects.md -->
 <div class="projects">
