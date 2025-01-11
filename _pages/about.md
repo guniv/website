@@ -32,7 +32,7 @@ In 2019, I graduated from the University of Tennessee with a bachelor of science
 <div id="testimonial-carousel" class="carousel">
   <div class="carousel-content"></div>
 </div>
-<div id="testimonial-carousel" class="carousel">
+<div id="testimonial-arrows" class="carousel">
   <div class="carousel-arrows">
     <button id="prev-arrow" class="carousel-arrow">←</button>
     <button id="next-arrow" class="carousel-arrow">→</button>
@@ -132,6 +132,17 @@ In 2019, I graduated from the University of Tennessee with a bachelor of science
     border-radius: var(--global-border-radius, 8px);
     box-shadow: var(--global-box-shadow);
   }
+  #testimonial-arrows {
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    overflow: hidden; /* Contain content */
+    text-align: center;
+    font-family: var(--global-font-family);
+    background-color: var(--global-background-color);
+    border-radius: var(--global-border-radius, 8px);
+    box-shadow: var(--global-box-shadow);
+  }
 
   .carousel-content {
     padding: 20px;
@@ -172,7 +183,6 @@ In 2019, I graduated from the University of Tennessee with a bachelor of science
     display: flex;
     justify-content: center;
     gap: 20px; /* Space between the arrows */
-    margin-top: 20px; /* Space above the arrows */
   }
 
   .carousel-arrow {
