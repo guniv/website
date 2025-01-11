@@ -125,6 +125,7 @@ In 2019, I graduated from the University of Tennessee with a bachelor of science
     width: 100%;
     max-width: 800px;
     margin: 40px auto;
+    margin-bottom: 5px
     overflow: hidden; /* Contain content */
     text-align: center;
     font-family: var(--global-font-family);
@@ -135,7 +136,6 @@ In 2019, I graduated from the University of Tennessee with a bachelor of science
   #testimonial-arrows {
     position: relative;
     width: 100%;
-    max-width: 800px;
     overflow: hidden; /* Contain content */
     text-align: center;
     font-family: var(--global-font-family);
