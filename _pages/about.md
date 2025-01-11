@@ -29,11 +29,14 @@ In 2019, I graduated from the University of Tennessee with a bachelor of science
 
 ---
 <!-- Testimonial Carousel -->
-<div id="testimonial-carousel" class="carousel rounded-lg shadow-md">
-  <button id="prev-arrow" class="carousel-arrow">←</button>
+<div id="testimonial-carousel" class="carousel">
   <div class="carousel-content"></div>
-  <button id="next-arrow" class="carousel-arrow">→</button>
+  <div class="carousel-arrows">
+    <button id="prev-arrow" class="carousel-arrow">←</button>
+    <button id="next-arrow" class="carousel-arrow">→</button>
+  </div>
 </div>
+
 
 <!-- Inline Testimonials -->
 <script>
@@ -121,7 +124,7 @@ In 2019, I graduated from the University of Tennessee with a bachelor of science
     width: 100%;
     max-width: 800px;
     margin: 40px auto;
-    overflow: hidden; /* Contain the text and arrows inside the carousel */
+    overflow: hidden; /* Contain content */
     text-align: center;
     font-family: var(--global-font-family);
     background-color: var(--global-background-color);
@@ -130,9 +133,8 @@ In 2019, I graduated from the University of Tennessee with a bachelor of science
   }
 
   .carousel-content {
-    position: relative;
-    padding: 20px 40px; /* Add space for arrows */
-    box-sizing: border-box; /* Ensure padding doesn’t affect width */
+    padding: 20px;
+    box-sizing: border-box;
   }
 
   .carousel-item {
@@ -147,14 +149,14 @@ In 2019, I graduated from the University of Tennessee with a bachelor of science
   }
 
   .carousel-item blockquote {
-    background: none; /* Remove theme background */
-    border: none; /* Remove the left border line */
-    font-style: italic; /* Retain italicized style */
-    font-size: inherit; /* Match carousel typography */
-    line-height: 1.6; /* Improve readability */
+    background: none;
+    border: none;
+    font-style: italic;
+    font-size: inherit;
+    line-height: 1.6;
     color: var(--global-text-color-light);
-    margin: 0; /* Remove default blockquote margin */
-    padding: 0; /* Remove extra padding */
+    margin: 0 0 10px;
+    padding: 0;
   }
 
   .carousel-item cite {
@@ -162,49 +164,41 @@ In 2019, I graduated from the University of Tennessee with a bachelor of science
     margin-top: 15px;
     font-size: 1.1em;
     font-weight: bold;
-    color: var(--global-theme-color); /* Match theme colors */
+    color: var(--global-theme-color);
+  }
+
+  .carousel-arrows {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Space between the arrows */
+    margin-top: 20px; /* Space above the arrows */
   }
 
   .carousel-arrow {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
     background: none;
     border: none;
     font-size: 2rem;
     cursor: pointer;
-    z-index: 10; /* Ensure arrows are above content */
     color: var(--global-theme-color);
     transition: color 0.3s ease;
   }
 
-  #prev-arrow {
-    left: 10px; /* Position inside the carousel */
-  }
-
-  #next-arrow {
-    right: 10px; /* Position inside the carousel */
-  }
-
   .carousel-arrow:hover {
-    color: var(--global-theme-color-dark); /* Darken color on hover */
+    color: var(--global-theme-color-dark);
   }
 
   /* Responsive Adjustments */
   @media (max-width: 768px) {
     #testimonial-carousel {
-      max-width: 100%; /* Ensure carousel fits smaller screens */
+      max-width: 100%;
     }
 
-    .carousel-content {
-      padding: 10px 20px; /* Reduce padding for smaller screens */
+    .carousel-arrow {
+      font-size: 1.5rem;
     }
 
-    #prev-arrow,
-    #next-arrow {
-      font-size: 1.5rem; /* Scale down arrow size */
-      left: 5px;
-      right: 5px; /* Keep arrows close to the edges */
+    .carousel-arrows {
+      gap: 10px;
     }
   }
 
