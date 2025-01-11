@@ -31,12 +31,13 @@ In 2019, I graduated from the University of Tennessee with a bachelor of science
 <!-- Testimonial Carousel -->
 <div id="testimonial-carousel" class="carousel">
   <div class="carousel-content"></div>
+</div>
+<div id="testimonial-carousel" class="carousel">
   <div class="carousel-arrows">
     <button id="prev-arrow" class="carousel-arrow">←</button>
     <button id="next-arrow" class="carousel-arrow">→</button>
   </div>
 </div>
-
 
 <!-- Inline Testimonials -->
 <script>
