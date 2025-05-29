@@ -19,9 +19,6 @@ jobs:
         with:
           ruby-version: "3.2.2"
           bundler-cache: true
-      - name: Set up Authentication for GitHub Package Registry
-        run: |
-          bundle config set --global rubygems.pkg.github.com ${GITHUB_ACTOR}:${{ secrets.RUBYGEMS_AUTH_TOKEN }}
       - name: Update _config.yml ⚙️
         uses: fjogeleit/yaml-update-action@main
         with:
