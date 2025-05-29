@@ -85,9 +85,14 @@ bing_site_verification: # out your bing-site-verification ID (Bing Webmaster)
 # -----------------------------------------------------------------------------
 
 collections:
+  books:
+    output: true
+  news:
+    defaults:
+      layout: post
+    output: true
   projects:
     output: true
-    permalink: /:collection/:title/
 
 # -----------------------------------------------------------------------------
 # Jekyll settings
