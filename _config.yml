@@ -91,7 +91,7 @@ collections:
     defaults:
       layout: post
     output: true
-  projects:
+  portfolio:
     output: true
 
 # -----------------------------------------------------------------------------
