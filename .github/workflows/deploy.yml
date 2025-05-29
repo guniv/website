@@ -1,5 +1,8 @@
 name: Deploy site
 
+env:
+  BUNDLE_RUBYGEMS__PKG__GITHUB__COM: ${{ secrets.BUNDLE_RUBYGEMS__PKG__GITHUB__COM }}
+
 on:
   push:
     branches:
