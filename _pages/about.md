@@ -224,7 +224,11 @@ I also have experience in content strategy, project management, technical writin
   </a>
 
   {% assign featured_projects = site.portfolio | where: "featured", true %}
+{% if featured_projects %}
   {% assign sorted_projects = featured_projects | sort: "date" | reverse %}
+{% else %}
+  {% assign sorted_projects = "" | split: "," %} {# Empty array #}
+{% endif %}
 
   {% if page.horizontal %}
   <div class="container">
