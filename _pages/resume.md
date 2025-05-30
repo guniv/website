@@ -10,4 +10,4 @@ toc:
   sidebar: left
 ---
 
- {% pdf "/../website/assets/pdf/Résumé.pdf" no_link height=1150px %}
+ {% pdf "{{ site.baseurl }}/assets/pdf/Résumé.pdf" no_link height=1150px %}
