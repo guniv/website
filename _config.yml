@@ -154,7 +154,7 @@ plugins:
   - jekyll-terser
   - jekyll-toc
   - jekyll-twitter-plugin
-  - jekyll-analytics
+  # - jekyll-analytics
   - jemoji
   - jekyll-pdf-embed
 
@@ -184,20 +184,20 @@ terser:
   compress:
     drop_console: true
 
-# -----------------------------------------------------------------------------
-# Jekyll Analytics
-# -----------------------------------------------------------------------------
+# # -----------------------------------------------------------------------------
+# # Jekyll Analytics
+# # -----------------------------------------------------------------------------
 
-jekyll_analytics:
-  Plausible:
-    domain: 'guniv.net'   # The domain configured in plausible
-    source: 'https://counterscale.guniv.net/tracker.js' # The source URL of the javascript,
-    host: 'https://counterscale.guniv.net' # The base URL of the plausible host, only needed for embed_tracker
-    404_tracking: false      # Enable 404 error tracking. Also requires changes to your webserver and 404.md
-                            # See https://plausible.io/docs/404-error-pages-tracking for other set up required
-    embed_tracker: false     # embed the tracking code instead of loading the javascript; this removes one
-                            # call from page loading and circumvents adblockers; this uses `host` to generate
-                            # the correct callback destination
+# jekyll_analytics:
+#   Plausible:
+#     domain: 'guniv.net'   # The domain configured in plausible
+#     source: 'https://counterscale.guniv.net/tracker.js' # The source URL of the javascript,
+#     host: 'https://counterscale.guniv.net' # The base URL of the plausible host, only needed for embed_tracker
+#     404_tracking: false      # Enable 404 error tracking. Also requires changes to your webserver and 404.md
+#                             # See https://plausible.io/docs/404-error-pages-tracking for other set up required
+#     embed_tracker: false     # embed the tracking code instead of loading the javascript; this removes one
+#                             # call from page loading and circumvents adblockers; this uses `host` to generate
+#                             # the correct callback destination
 
 # -----------------------------------------------------------------------------
 # Jekyll Archives
