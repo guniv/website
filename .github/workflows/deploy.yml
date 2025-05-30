@@ -102,10 +102,10 @@ jobs:
           npm install -g purgecss
           purgecss -c purgecss.config.js
       - name: Publish to Cloudflare Pages
-           uses: cloudflare/pages-action@v1
-           with:
-               apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }} # Cloudflare API token
-               accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }} # Cloudflare account ID
-               projectName: website # your Cloudflare Pages project name
-               directory: _site
-               branch: ${{ github.event.workflow_run.head_branch }}
+        uses: cloudflare/pages-action@v1
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }} # Cloudflare API token
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }} # Cloudflare account ID
+          projectName: website # your Cloudflare Pages project name
+          directory: _site
+          branch: ${{ github.event.workflow_run.head_branch }}
