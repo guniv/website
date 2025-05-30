@@ -118,12 +118,20 @@ jobs:
       - name: Create Cloudflare Pages project (if not exists)
         if: github.event_name != 'pull_request'
         run: |
-          if ! wrangler pages project view website &> /dev/null; then
+          # Check if project exists in the list
+          if ! wrangler pages project list | grep -q "website"; then
             echo "Creating new Pages project"
             wrangler pages project create website --production-branch=main
           else
             echo "Project already exists"
           fi
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+      - name: Debug project existence
+        run: |
+          wrangler pages project list
+          wrangler pages project view website || true
         env:
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
