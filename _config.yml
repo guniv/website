@@ -191,11 +191,11 @@ terser:
 jekyll_analytics:
   Plausible:
     domain: 'guniv.net'   # The domain configured in plausible
-    source: 'https://analytics.guniv.net/script.js' # The source URL of the javascript,
-    host: 'https://analytics.guniv.net/' # The base URL of the plausible host, only needed for embed_tracker
+    source: 'https://vince.guniv.net/js/script.file-downloads.hash.outbound-links.tagged-events.js' # The source URL of the javascript,
+    host: 'https://vince.guniv.net' # The base URL of the plausible host, only needed for embed_tracker
     404_tracking: false      # Enable 404 error tracking. Also requires changes to your webserver and 404.md
                             # See https://plausible.io/docs/404-error-pages-tracking for other set up required
-    embed_tracker: false     # embed the tracking code instead of loading the javascript; this removes one
+    embed_tracker: true     # embed the tracking code instead of loading the javascript; this removes one
                             # call from page loading and circumvents adblockers; this uses `host` to generate
                             # the correct callback destination
 
