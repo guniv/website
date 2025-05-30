@@ -4,6 +4,16 @@ title: Portfolio
 permalink: /portfolio/
 nav: true
 nav_order: 2
+dropdown: true
+children:
+  - title: Writing
+    permalink: /portfolio/writing/
+  - title: divider
+  - title: Projects
+    permalink: /portfolio/projects/
+  - title: divider
+  - title: Awards
+    permalink: /portfolio/awards/
 horizontal: false
 ---
 

@@ -156,7 +156,6 @@ plugins:
   - jekyll-twitter-plugin
   # - jekyll-analytics
   - jemoji
-  - jekyll-pdf-embed
 
 # Sitemap settings
 defaults:

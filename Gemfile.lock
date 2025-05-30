@@ -236,12 +236,6 @@ GEM
     uri (1.0.3)
     webrick (1.9.1)
 
-GEM
-  remote: https://rubygems.pkg.github.com/mihajlonesic/
-  specs:
-    jekyll-pdf-embed (1.1.1)
-      jekyll
-
 PLATFORMS
   aarch64-linux
   aarch64-linux-gnu
@@ -272,7 +266,6 @@ DEPENDENCIES
   jekyll-link-attributes
   jekyll-minifier
   jekyll-paginate-v2
-  jekyll-pdf-embed (= 1.1.1)!
   jekyll-regex-replace
   jekyll-sitemap
   jekyll-tabs

@@ -11,17 +11,29 @@ I used HTML redirect code to develop a system that allows for A/B testing of soc
 
 For example: 
 
-https://twitter.com/gbceducation/status/1293576991543885824
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/projects/ab1.png" title="example image" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+[https://twitter.com/gbceducation/status/1293576991543885824](https://xcancel.com/gbceducation/status/1293576991543885824)
 
 Original card variation.
-bJPrLFB[1].png
 
-https://twitter.com/gbceducation/status/1293633963060334594
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/projects/ab2.png" title="example image" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+[https://twitter.com/gbceducation/status/1293633963060334594](https://xcancel.com/gbceducation/status/1293633963060334594)
 
 Card variation with different title and description, same image.
-NJ2GDoV[1].png
 
-https://twitter.com/gbceducation/status/1293634511838818310
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/projects/ab3.png" title="example image" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+[https://twitter.com/gbceducation/status/1293634511838818310](https://xcancel.com/gbceducation/status/1293634511838818310)
 
 Card variation with different image, same title and description.
-JUbkL3G[1].png

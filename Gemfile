@@ -21,11 +21,6 @@ group :jekyll_plugins do
     gem 'jekyll-twitter-plugin'
     gem "jekyll-analytics", "~> 0.1", git: 'https://github.com/hendrikschneider/jekyll-analytics', ref: '40e09570dea80e3a9ecb0ad796aad1c434ff067c'
     gem 'jemoji'
-        # Specify the source for jekyll-pdf-embed
-    source "https://rubygems.pkg.github.com/mihajlonesic" do
-        gem 'jekyll-pdf-embed', "1.1.1"
-    end
-
     gem 'classifier-reborn'  # used for content categorization during the build
 end
 
