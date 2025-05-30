@@ -19,6 +19,7 @@ group :jekyll_plugins do
     gem 'jekyll-terser', :git => "https://github.com/RobertoJBeltran/jekyll-terser.git"
     gem 'jekyll-toc'
     gem 'jekyll-twitter-plugin'
+    gem "jekyll-analytics", "~> 0.1", git: 'https://github.com/hendrikschneider/jekyll-analytics', ref: '40e09570dea80e3a9ecb0ad796aad1c434ff067c'
     gem 'jemoji'
         # Specify the source for jekyll-pdf-embed
     source "https://rubygems.pkg.github.com/mihajlonesic" do

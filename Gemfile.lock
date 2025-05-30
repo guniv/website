@@ -6,6 +6,13 @@ GIT
       jekyll (>= 0.10.0)
       terser (>= 1.0.0)
 
+GIT
+  remote: https://github.com/hendrikschneider/jekyll-analytics
+  revision: 40e09570dea80e3a9ecb0ad796aad1c434ff067c
+  ref: 40e09570dea80e3a9ecb0ad796aad1c434ff067c
+  specs:
+    jekyll-analytics (0.1.12)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -255,6 +262,7 @@ DEPENDENCIES
   feedjira
   httparty
   jekyll
+  jekyll-analytics (~> 0.1)!
   jekyll-archives-v2
   jekyll-email-protect
   jekyll-feed
