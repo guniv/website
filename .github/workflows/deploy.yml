@@ -107,5 +107,6 @@ jobs:
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-          command: pages deploy _site --project-name=website
-          gitHubToken: ${{ secrets.GITHUB_TOKEN }}
+          command: |
+            pages project create website --production-branch=main || true
+            pages deploy _site --project-name=website
