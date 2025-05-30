@@ -168,7 +168,7 @@ I also have experience in content strategy, project management, technical writin
     font-weight: bold;
     font-size: inherit;
     line-height: 1.6;
-    color: var(--global-text-color-light);
+    color: var(--global-text-color);
     margin: 0 0 10px;
     padding: 0;
   }
@@ -178,7 +178,7 @@ I also have experience in content strategy, project management, technical writin
     margin-top: 0px;
     font-size: 1.1em;
     font-weight: bold;
-    color: var(--global-theme-color);
+    color: var(--global-text-color-light);
   }
 
   .carousel-arrows {
