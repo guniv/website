@@ -13,6 +13,12 @@
       <meta http-equiv="refresh" content="3; url={{ redirect }}">
     {% endif %}
     {% include head.liquid %}
+  <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="{{ page.url | absolute_url }}" />
+  <meta property="og:image" content="{% if page.img %}{{ page.img | absolute_url }}{% else %}{{ site.og_image | absolute_url }}{% endif %}" />
+  <meta property="og:description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}" />
+  <meta property="og:site_name" content="{{ site.title }}" />
   <script defer src="https://umami.guniv.net/script.js" data-website-id="88eae9db-e276-47b9-8c08-068e09979e85"></script>
   </head>
 
