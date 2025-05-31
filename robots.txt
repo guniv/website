@@ -1,1 +1,1 @@
-User-agent: * Disallow: Sitemap: https://guniv.github.io/website/sitemap.xml
+User-agent: * Disallow: Sitemap: https://guniv.net/sitemap.xml
