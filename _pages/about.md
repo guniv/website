@@ -3,13 +3,15 @@ layout: about
 title: About
 permalink: /
 subtitle: Welcome!
+dropdown: true
+nav: false
 
 profile:
   align: right
   image: prof_pic.jpg
   image_circular: true # crops the image to make it circular
 
-news: true # includes a list of news items
+news: false # includes a list of news items
 social: true # includes social icons at the bottom of the page
 display_categories: [featured work]
 horizontal: false
