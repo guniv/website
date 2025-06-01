@@ -37,23 +37,7 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/resume/";
           },
-        },{id: "books-the-godfather",
-          title: 'The Godfather',
-          description: "",
-          section: "Books",handler: () => {
-              window.location.href = "/books/the_godfather.html";
-            },},{id: "news-a-simple-inline-announcement",
-          title: 'A simple inline announcement.',
-          description: "",
-          section: "News",},{id: "news-a-long-announcement-with-details",
-          title: 'A long announcement with details',
-          description: "",
-          section: "News",handler: () => {
-              window.location.href = "/news/announcement_2.html";
-            },},{id: "news-a-simple-inline-announcement-with-markdown-emoji-sparkles-smile",
-          title: 'A simple inline announcement with Markdown emoji! :sparkles: :smile:',
-          description: "",
-          section: "News",},{id: "portfolio-2014-rise-to-the-challenge-winner",
+        },{id: "portfolio-2014-rise-to-the-challenge-winner",
           title: '2014 Rise to the Challenge Winner',
           description: "In high school, I was one of three winners in 2014 of the State Collaborative for Reform in Education (SCORE) Rise to the Challenge competition. For the competition, I created a video highlighting the innovative ways my high school was preparing students for college and careers.",
           section: "Portfolio",handler: () => {
@@ -68,6 +52,11 @@ ninja.data = [{
           description: "My high school robotics team, the L&amp;N STEMpunks, was chosen for the 2016 Media &amp; Technology Award out of 3,000 teams. I established the team’s media presence as a student and was a mentor when we won the award.",
           section: "Portfolio",handler: () => {
               window.location.href = "/portfolio/awards/2016%20Media%20and%20Technology%20Award.html";
+            },},{id: "portfolio-a-visit-to-maple-hall-downtown-knoxville-s-basement-bowling-alley",
+          title: 'A Visit to Maple Hall, Downtown Knoxville’s Basement Bowling Alley',
+          description: "A blog post about downtown Knoxville’s new bowling alley that I wrote for the Knoxville Mercury while I was an intern there in the summer of 2016.",
+          section: "Portfolio",handler: () => {
+              window.location.href = "/portfolio/writing/A%20Visit%20to%20Maple%20Hall.html";
             },},{id: "portfolio-new-biz-roundup-fountains-go-karts-tacos",
           title: 'New Biz Roundup: Fountains, Go-Karts, Tacos',
           description: "A blog post about new business openings I wrote for the Knoxville Mercury while I was an intern there in the summer of 2016.",
@@ -98,11 +87,21 @@ ninja.data = [{
           description: "A quick article I was asked to write for FIRST about a club I started at the University of Tennessee.",
           section: "Portfolio",handler: () => {
               window.location.href = "/portfolio/writing/FIRST%20Alumni%20Group.html";
+            },},{id: "portfolio-all-aboard-the-neutron-train-mapping-residual-stresses-for-more-robust-rails",
+          title: 'All Aboard the Neutron Train: Mapping Residual Stresses for More Robust Rails',
+          description: "An article I wrote during my internship with ORNL highlighting the use of neutrons in investigating residual stresses in rails.",
+          section: "Portfolio",handler: () => {
+              window.location.href = "/portfolio/writing/All%20Aboard%20the%20Neutron%20Train.html";
             },},{id: "portfolio-matthew-ryder-understanding-the-stability-of-next-generation-materials",
           title: 'Matthew Ryder: Understanding the Stability of Next-Generation Materials',
           description: "An article I wrote during my internship with ORNL profiling early-career researcher Matthew Ryder, who had recently been hired at the lab as a Shull Wollan Fellow.",
           section: "Portfolio",handler: () => {
               window.location.href = "/portfolio/writing/Matthew%20Ryder.html";
+            },},{id: "portfolio-3d-printed-collimators-for-neutron-scattering-enables-new-science-and-lowers-costs",
+          title: '3D printed collimators for neutron scattering enables new science and lowers costs',
+          description: "An article I wrote during my internship with ORNL highlighting the use of 3D printing to create improved collimators to be used in neutron scattering.",
+          section: "Portfolio",handler: () => {
+              window.location.href = "/portfolio/writing/3D%20printed%20collimators.html";
             },},{id: "portfolio-timken-turns-to-neutrons-to-get-its-bearings-on-internal-stresses",
           title: 'Timken turns to neutrons to get its bearings on internal stresses',
           description: "An article I wrote during my internship with ORNL highlighting the use of neutron scattering in analyzing and understanding residual stresses in industrial bearings.",
@@ -138,6 +137,11 @@ ninja.data = [{
           description: "A short story tip I wrote during my internship with ORNL highlighting the use of neutron scattering in investigating improved fuel cell materials.",
           section: "Portfolio",handler: () => {
               window.location.href = "/portfolio/writing/Neutrons%20fueling%20better%20power.html";
+            },},{id: "portfolio-39-the-best-it-39-s-ever-been-39-analyzing-ut-39-s-relationship-with-knoxville-city-mayor",
+          title: '&amp;#39;The best it&amp;#39;s ever been&amp;#39;: Analyzing UT&amp;#39;s relationship with Knoxville, city mayor',
+          description: "An article I wrote for a feature writing class at the University of Tennessee investigating the relationship between the university and the city of Knoxville.",
+          section: "Portfolio",handler: () => {
+              window.location.href = "/portfolio/writing/Analyzing%20UT's%20relationship.html";
             },},{id: "portfolio-neutrons-fighting-superbugs",
           title: 'Neutrons—Fighting superbugs',
           description: "A short story tip I wrote during my internship with ORNL highlighting the use of neutron scattering to investigate the use of a unique peptide in fighting superbugs.",
@@ -193,6 +197,11 @@ ninja.data = [{
           description: "I wrote social media copy and scheduled posts to celebrate the UN’s World Humanitarian Day in 2020. I helped with the development of video content to feature organizations around the world doing philanthropic work.",
           section: "Portfolio",handler: () => {
               window.location.href = "/portfolio/projects/World%20Humanitarian%20Day%20social%20posts.html";
+            },},{id: "portfolio-award-winning-tools-enable-agencies-to-efficiently-and-easily-analyze-surveillance-footage",
+          title: 'Award-Winning Tools Enable Agencies to Efficiently and Easily Analyze Surveillance Footage',
+          description: "An article I wrote for MIT Lincoln Laboratory. The Forensic Video Exploitation and Analysis (FOVEA) suite of tools, which won a 2020 R&amp;D 100 Award, allows investigators to focus on finding information rather than sorting through it, which can shorten investigations that would typically take days into just hours or even minutes.",
+          section: "Portfolio",handler: () => {
+              window.location.href = "/portfolio/writing/Award-Winning%20Tools.html";
             },},{id: "portfolio-scout-creates-historic-marker-for-millstone-hill-radar-and-haystack-observatory",
           title: 'Scout creates historic marker for Millstone Hill Radar and Haystack Observatory',
           description: "A story I wrote for MIT Lincoln Laboratory. Carter Purple, a local Scout, created and installed a marker to commemorate the history of the MIT Haystack Observatory and Millstone Hill Radar site.",
@@ -293,76 +302,6 @@ ninja.data = [{
           description: "My current version of the website began development in early 2025. My goal was to have more control over the site, because I like tinkering, and to avoid a yearly ~$250 bill from Squarespace.",
           section: "Portfolio",handler: () => {
               window.location.href = "/portfolio/projects/guniv.net%202025-now.html";
-            },},{id: "portfolio-project-1",
-          title: 'project 1',
-          description: "with background image",
-          section: "Portfolio",handler: () => {
-              window.location.href = "/portfolio/templates/1_project.html";
-            },},{id: "portfolio-project-2",
-          title: 'project 2',
-          description: "a project with a background image and giscus comments",
-          section: "Portfolio",handler: () => {
-              window.location.href = "/portfolio/templates/2_project.html";
-            },},{id: "portfolio-project-3-with-very-long-name",
-          title: 'project 3 with very long name',
-          description: "a project that redirects to another website",
-          section: "Portfolio",handler: () => {
-              window.location.href = "/portfolio/templates/3_project.html";
-            },},{id: "portfolio-project-4",
-          title: 'project 4',
-          description: "another without an image",
-          section: "Portfolio",handler: () => {
-              window.location.href = "/portfolio/templates/4_project.html";
-            },},{id: "portfolio-project-5",
-          title: 'project 5',
-          description: "a project with a background image",
-          section: "Portfolio",handler: () => {
-              window.location.href = "/portfolio/templates/5_project.html";
-            },},{id: "portfolio-project-6",
-          title: 'project 6',
-          description: "a project with no image",
-          section: "Portfolio",handler: () => {
-              window.location.href = "/portfolio/templates/6_project.html";
-            },},{id: "portfolio-project-7",
-          title: 'project 7',
-          description: "with background image",
-          section: "Portfolio",handler: () => {
-              window.location.href = "/portfolio/templates/7_project.html";
-            },},{id: "portfolio-project-8",
-          title: 'project 8',
-          description: "an other project with a background image and giscus comments",
-          section: "Portfolio",handler: () => {
-              window.location.href = "/portfolio/templates/8_project.html";
-            },},{id: "portfolio-project-9",
-          title: 'project 9',
-          description: "another project with an image 🎉",
-          section: "Portfolio",handler: () => {
-              window.location.href = "/portfolio/templates/9_project.html";
-            },},{id: "portfolio-a-visit-to-maple-hall-downtown-knoxville-s-basement-bowling-alley",
-          title: 'A Visit to Maple Hall, Downtown Knoxville’s Basement Bowling Alley',
-          description: "A blog post about downtown Knoxville’s new bowling alley that I wrote for the Knoxville Mercury while I was an intern there in the summer of 2016.",
-          section: "Portfolio",handler: () => {
-              window.location.href = "/portfolio/writing/A%20Visit%20to%20Maple%20Hall.html";
-            },},{id: "portfolio-all-aboard-the-neutron-train-mapping-residual-stresses-for-more-robust-rails",
-          title: 'All Aboard the Neutron Train: Mapping Residual Stresses for More Robust Rails',
-          description: "An article I wrote during my internship with ORNL highlighting the use of neutrons in investigating residual stresses in rails.",
-          section: "Portfolio",handler: () => {
-              window.location.href = "/portfolio/writing/All%20Aboard%20the%20Neutron%20Train.html";
-            },},{id: "portfolio-3d-printed-collimators-for-neutron-scattering-enables-new-science-and-lowers-costs",
-          title: '3D printed collimators for neutron scattering enables new science and lowers costs',
-          description: "An article I wrote during my internship with ORNL highlighting the use of 3D printing to create improved collimators to be used in neutron scattering.",
-          section: "Portfolio",handler: () => {
-              window.location.href = "/portfolio/writing/3D%20printed%20collimators.html";
-            },},{id: "portfolio-39-the-best-it-39-s-ever-been-39-analyzing-ut-39-s-relationship-with-knoxville-city-mayor",
-          title: '&amp;#39;The best it&amp;#39;s ever been&amp;#39;: Analyzing UT&amp;#39;s relationship with Knoxville, city mayor',
-          description: "An article I wrote for a feature writing class at the University of Tennessee investigating the relationship between the university and the city of Knoxville.",
-          section: "Portfolio",handler: () => {
-              window.location.href = "/portfolio/writing/Analyzing%20UT's%20relationship.html";
-            },},{id: "portfolio-award-winning-tools-enable-agencies-to-efficiently-and-easily-analyze-surveillance-footage",
-          title: 'Award-Winning Tools Enable Agencies to Efficiently and Easily Analyze Surveillance Footage',
-          description: "An article I wrote for MIT Lincoln Laboratory. The Forensic Video Exploitation and Analysis (FOVEA) suite of tools, which won a 2020 R&amp;D 100 Award, allows investigators to focus on finding information rather than sorting through it, which can shorten investigations that would typically take days into just hours or even minutes.",
-          section: "Portfolio",handler: () => {
-              window.location.href = "/portfolio/writing/Award-Winning%20Tools.html";
             },},{
       id: 'light-theme',
       title: 'Change theme to light',
