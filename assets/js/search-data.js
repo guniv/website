@@ -9,7 +9,21 @@ ninja.data = [{
     handler: () => {
       window.location.href = "/";
     },
-  },{id: "dropdown-writing",
+  },{id: "dropdown-home",
+              title: "Home",
+              description: "",
+              section: "Dropdown",
+              handler: () => {
+                window.location.href = "/";
+              },
+            },{id: "dropdown-hobbies",
+              title: "Hobbies",
+              description: "",
+              section: "Dropdown",
+              handler: () => {
+                window.location.href = "/hobbies/";
+              },
+            },{id: "dropdown-writing",
               title: "Writing",
               description: "",
               section: "Dropdown",
@@ -37,7 +51,27 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/resume/";
           },
-        },{id: "portfolio-2014-rise-to-the-challenge-winner",
+        },{id: "hobbies-gaming",
+          title: 'Gaming',
+          description: "I have been gaming for a long time. (I&#39;m about six or seven years old in the attached photo.)",
+          section: "Hobbies",handler: () => {
+              window.location.href = "/hobbies/Gaming.html";
+            },},{id: "hobbies-computing",
+          title: 'Computing',
+          description: "I enjoy building and maintaining servers at my home, mainly for gaming.",
+          section: "Hobbies",handler: () => {
+              window.location.href = "/hobbies/Computing.html";
+            },},{id: "hobbies-smart-home",
+          title: 'Smart home',
+          description: "I use Home Assistant to automate and track many parts of my home.",
+          section: "Hobbies",handler: () => {
+              window.location.href = "/hobbies/Smart%20home.html";
+            },},{id: "hobbies-my-servers",
+          title: 'My servers',
+          description: "I have two servers at my home running the Unraid operating system that I use to self-host a variety of apps and services. One of the systems is a storage server with 22 terabytes of storage, and the other is a simple mini PC.",
+          section: "Hobbies",handler: () => {
+              window.location.href = "/hobbies/My%20servers.html";
+            },},{id: "portfolio-2014-rise-to-the-challenge-winner",
           title: '2014 Rise to the Challenge Winner',
           description: "In high school, I was one of three winners in 2014 of the State Collaborative for Reform in Education (SCORE) Rise to the Challenge competition. For the competition, I created a video highlighting the innovative ways my high school was preparing students for college and careers.",
           section: "Portfolio",handler: () => {
