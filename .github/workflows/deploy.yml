@@ -106,44 +106,44 @@ jobs:
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           folder: _site
-      - name: Verify Cloudflare token
-        run: |
-          curl -X GET "https://api.cloudflare.com/client/v4/user/tokens/verify" \
-            -H "Authorization: Bearer $CLOUDFLARE_API_TOKEN" \
-            -H "Content-Type:application/json"
-        env:
-          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
-      - name: Install Wrangler
-        run: npm install -g wrangler@3.90.0
-      - name: List Cloudflare Pages projects
-        run: wrangler pages project list
-        env:
-          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
-          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-      - name: Create Cloudflare Pages project (if not exists)
-        if: github.event_name != 'pull_request'
-        run: |
-          # Check if project exists in the list
-          if ! wrangler pages project list | grep -q "website"; then
-            echo "Creating new Pages project"
-            wrangler pages project create website --production-branch=main
-          else
-            echo "Project already exists"
-          fi
-        env:
-          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
-          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-      - name: Debug project existence
-        run: |
-          wrangler pages project list
-          wrangler pages project view website || true
-        env:
-          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
-          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-      - name: Deploy to Cloudflare Pages
-        if: github.event_name != 'pull_request'
-        uses: cloudflare/wrangler-action@v3
-        with:
-          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
-          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-          command: pages deploy _site --project-name=website
+      # - name: Verify Cloudflare token
+      #   run: |
+      #     curl -X GET "https://api.cloudflare.com/client/v4/user/tokens/verify" \
+      #       -H "Authorization: Bearer $CLOUDFLARE_API_TOKEN" \
+      #       -H "Content-Type:application/json"
+      #   env:
+      #     CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+      # - name: Install Wrangler
+      #   run: npm install -g wrangler@3.90.0
+      # - name: List Cloudflare Pages projects
+      #   run: wrangler pages project list
+      #   env:
+      #     CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+      #     CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+      # - name: Create Cloudflare Pages project (if not exists)
+      #   if: github.event_name != 'pull_request'
+      #   run: |
+      #     # Check if project exists in the list
+      #     if ! wrangler pages project list | grep -q "website"; then
+      #       echo "Creating new Pages project"
+      #       wrangler pages project create website --production-branch=main
+      #     else
+      #       echo "Project already exists"
+      #     fi
+      #   env:
+      #     CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+      #     CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+      # - name: Debug project existence
+      #   run: |
+      #     wrangler pages project list
+      #     wrangler pages project view website || true
+      #   env:
+      #     CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+      #     CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+      # - name: Deploy to Cloudflare Pages
+      #   if: github.event_name != 'pull_request'
+      #   uses: cloudflare/wrangler-action@v3
+      #   with:
+      #     apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+      #     accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+      #     command: pages deploy _site --project-name=website
