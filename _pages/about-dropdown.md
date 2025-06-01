@@ -6,7 +6,7 @@ dropdown: true
 nav: true
 nav_order: 1
 children:
-  - title: Home
+  - title: About
     permalink: /
   - title: Hobbies
     permalink: /hobbies/
