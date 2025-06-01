@@ -2,12 +2,15 @@
 # the commented lines are the default social media links supported by the template
 # the socials will be displayed in the order they are defined here
 
+linkedin_username: guniv # your LinkedIn user name
+github_username: guniv # your GitHub user name
+bluesky_url: https://bsky.app/profile/guniv.net # your bluesky URL
+facebook_id: guniv # your facebook id
+discord_id: 170990074652131331 # your discord id (18-digit unique numerical identifier)
 # acm_id: # your dl.acm.org/profile/id
 # blogger_url: # your blogger URL
-bluesky_url: https://bsky.app/profile/guniv.net # your bluesky URL
 # dblp_url: # your DBLP profile url
 # discord_id: # your discord id (18-digit unique numerical identifier)
-facebook_id: guniv # your facebook id
 # flickr_id: # your flickr id
 # github_username: # your GitHub user name
 # gitlab_username: # your GitLab user name
@@ -18,7 +21,6 @@ facebook_id: guniv # your facebook id
 # lastfm_id: # your lastfm id
 # lattes_id: # your ID on Lattes (Brazilian Lattes CV)
 # leetcode_id: # your LeetCode id
-linkedin_username: guniv # your LinkedIn user name
 # mastodon_username: # your mastodon instance+username in the format instance.tld/@username
 # medium_username: # your Medium username
 # orcid_id: # your ORCID ID
