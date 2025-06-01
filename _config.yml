@@ -85,6 +85,8 @@ collections:
     output: true
   portfolio:
     output: true
+  hobbies:
+    output: true
 
 # -----------------------------------------------------------------------------
 # Jekyll settings
