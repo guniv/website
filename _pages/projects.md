@@ -5,6 +5,7 @@ permalink: /portfolio/projects
 nav: false
 display_categories: [Projects]
 horizontal: false
+sitemap: true
 ---
 
 <!-- pages/projects.md -->

@@ -5,6 +5,7 @@ permalink: /portfolio/awards
 nav: false
 display_categories: [Awards]
 horizontal: false
+sitemap: true
 ---
 
 <!-- pages/projects.md -->

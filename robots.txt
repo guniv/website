@@ -2,6 +2,30 @@
 permalink: /robots.txt
 ---
 User-agent: *
-Disallow:
+Allow: /portfolio/writing/$
+Disallow: /portfolio/writing/*.html
+Disallow: /portfolio/writing/*/
+Allow: /portfolio/projects/$
+Disallow: /portfolio/projects/*.html
+Disallow: /portfolio/projects/*/
+Allow: /portfolio/awards/$
+Disallow: /portfolio/awards/*.html
+Disallow: /portfolio/awards/*/
+Allow: /portfolio/writing/$
+Disallow: /portfolio/writing/*.html
+Disallow: /portfolio/writing/*/
+Disallow: /assets/$
+Disallow: /res-award/$
+Disallow: /res-award/index.html
+Disallow: /res-mitll/$
+Disallow: /res-mitll/index.html
+Disallow: /res-nscd/$
+Disallow: /res-nscd/index.html
+Disallow: /res-ornl/$
+Disallow: /res-ornl/index.html
+Disallow: /res-pnnl/$
+Disallow: /res-pnnl/index.html
+Disallow: /res-ut/$
+Disallow: /res-ut/index.html
 
 Sitemap: {{ site.baseurl | prepend: site.url }}/sitemap.xml

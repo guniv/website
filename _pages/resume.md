@@ -7,6 +7,7 @@ nav_order: 3
 description: My résumé.
 toc:
   sidebar: left
+sitemap: true
 ---
 
  <iframe 

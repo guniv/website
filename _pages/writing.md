@@ -5,6 +5,7 @@ permalink: /portfolio/writing
 nav: false
 display_categories: [Writing]
 horizontal: false
+sitemap: true
 ---
 
 <!-- pages/projects.md -->

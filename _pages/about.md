@@ -13,6 +13,7 @@ news: true # includes a list of news items
 social: true # includes social icons at the bottom of the page
 display_categories: [featured work]
 horizontal: false
+sitemap: true
 ---
 
 As a science writer and communicator, my goal is to tell stories and explain complicated topics no matter how difficult the concept can be to understand. 

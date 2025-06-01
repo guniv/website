@@ -34,14 +34,6 @@ repo_trophies:
   theme_dark: gitdimmed # https://github.com/ryo-ma/github-profile-trophy
 
 # -----------------------------------------------------------------------------
-# RSS Feed
-# -----------------------------------------------------------------------------
-# will use title and url fields
-# Take a look to https://github.com/jekyll/jekyll-feed for more customization
-
-rss_icon: false
-
-# -----------------------------------------------------------------------------
 # Layout
 # -----------------------------------------------------------------------------
 
@@ -141,7 +133,6 @@ keep_files:
 plugins:
   - jekyll-archives-v2
   - jekyll-email-protect
-  - jekyll-feed
   - jekyll-get-json
   - jekyll-imagemagick
   - jekyll-jupyter-notebook
@@ -157,15 +148,31 @@ plugins:
   # - jekyll-analytics
   - jemoji
 
-# Sitemap settings
+sass:
+  style: compressed
+
+# -----------------------------------------------------------------------------
+# Sitemap
+# -----------------------------------------------------------------------------
+# Set sitemap: false globally
 defaults:
   - scope:
-      path: "assets"
+      path: ""  # All paths
     values:
       sitemap: false
 
-sass:
-  style: compressed
+# Then explicitly enable sitemap for specific URLs
+sitemap:
+  include:
+    - /index.html       # Root URL
+    - /resume/          # Resume page
+    - /resume/index.html
+    - /portfolio/writing/
+    - /portfolio/writing/index.html
+    - /portfolio/projects/
+    - /portfolio/projects/index.html
+    - /portfolio/awards/
+    - /portfolio/awards/index.html
 
 # -----------------------------------------------------------------------------
 # Jekyll Minifier
