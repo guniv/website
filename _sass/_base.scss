@@ -1051,7 +1051,6 @@ progress::-moz-progress-bar {
 
   .dropdown-item.active,
   .dropdown-item:active {
-    background-color: var(--global-hover-color);
     color: var(--global-hover-text-color) !important;
 
     &:hover {
