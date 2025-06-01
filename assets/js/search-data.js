@@ -299,7 +299,7 @@ ninja.data = [{
               window.location.href = "/portfolio/projects/CoolerControl.html";
             },},{id: "portfolio-guniv-net-2025-now",
           title: 'guniv.net, 2025 - now',
-          description: "My current version of the website began development in early 2025. My goal was to have more control over the site, because I like tinkering, and to avoid a yearly ~$250 bill from Squarespace.",
+          description: "My current version of the website began development in early 2025. My goal was to have more control over the site, because I like tinkering... and to avoid a yearly ~$250 bill from Squarespace.",
           section: "Portfolio",handler: () => {
               window.location.href = "/portfolio/projects/guniv.net%202025-now.html";
             },},{
