@@ -25,8 +25,8 @@ My past work at Pacific Northwest National Laboratory, MIT Lincoln Laboratory, a
 I also have experience in content strategy, project management, technical writing, social media, videography, photography, web development, and more. You can reach out to me on [LinkedIn](https://www.linkedin.com/in/guniv) if you're interested in working with me or have a role in mind for me. I look forward to hearing from you!
 
 <div class="projects">
-  <a id="testimonials" href="#testimonials">
-    <h2 class="category">Testimonials</h2>
+  <a id="endorsements" href="#endorsements">
+    <h2 class="category">Endorsements</h2>
   </a>
 </div>
 <!-- Testimonial Carousel -->
@@ -222,8 +222,8 @@ I also have experience in content strategy, project management, technical writin
 
 <!-- Featured Projects Section -->
 <div class="projects">
-  <a id="featured-projects" href="#featured-projects">
-    <h2 class="category">Featured Projects</h2>
+  <a id="featured-work" href="#featured-work">
+    <h2 class="category">Featured Work</h2>
   </a>
 
   {% assign featured_projects = site.portfolio | where: "featured", true %}
