@@ -328,7 +328,7 @@ ninja.data = [{
               window.location.href = "/portfolio/writing/Energy%20Storage%20@%20PNNL.html";
             },},{id: "portfolio-coolercontrol-docker",
           title: 'CoolerControl-Docker',
-          description: "I maintain the Docker container distribution of CoolerControl, an application that allows for fan control on Linux systems. I built out processes to maintain the container automatically, maintain documentation for the container, and field support issues for users.",
+          description: "I maintain the Docker container distribution of CoolerControl, an application that allows for fan control on Linux systems. It has been downloaded more than 2,500 times. I built out processes to maintain the container automatically, maintain documentation for the container, and field support issues for users.",
           section: "Portfolio",handler: () => {
               window.location.href = "/portfolio/projects/CoolerControl.html";
             },},{id: "portfolio-guniv-net-2025-now",
