@@ -5,6 +5,7 @@ permalink: /
 subtitle: Welcome!
 dropdown: true
 nav: false
+description: Science writer and communicator specializing in making complex technical topics accessible.
 
 profile:
   align: right

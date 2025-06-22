@@ -16,6 +16,15 @@
 
 {% capture author_name %}{{ site.first_name }}{% if site.middle_name %} {{ site.middle_name }}{% endif %} {{ site.last_name }}{% endcapture %}
 
+<!-- Open Graph meta tags -->
+<meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
+<meta property="og:description" content="{% if page.og_description %}{{ page.og_description }}{% elsif page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
+<meta property="og:type" content="{% if is_blog_post %}article{% else %}website{% endif %}">
+<meta property="og:url" content="{{ site.url }}{{ page.url | remove:'index.html' }}">
+{% if page.profile.image %}
+<meta property="og:image" content="{{ site.url }}{{ page.profile.image | prepend: '/assets/img/' }}">
+{% endif %}
+
 <!-- Standard metadata -->
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">

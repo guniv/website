@@ -4,7 +4,6 @@ permalink: /resume/
 title: Résumé
 nav: true
 nav_order: 4
-description: My résumé.
 toc:
   sidebar: left
 sitemap: true
