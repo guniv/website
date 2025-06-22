@@ -81,6 +81,11 @@ ninja.data = [{
           description: "I designed most of this website while in high school for my high school robotics team. Another student built the basics, and I used basic HTML and CSS knowledge to add features and content.",
           section: "Portfolio",handler: () => {
               window.location.href = "/portfolio/projects/L&N%20STEMpunks%20Website.html";
+            },},{id: "portfolio-2016-amp-2017-first-robotics-competition-entrepreneurship-award",
+          title: '2016 &amp;amp; 2017 FIRST Robotics Competition Entrepreneurship Award',
+          description: "As a mentor for FIRST Robotics Competition team 3966, I helped the team put together a submission for the Entrepreneurship Award that was selected as the winner at the 2016 Rocket City Regional in Huntsville, Alabama and the 2017 Smoky Mountains Regional in Knoxville, Tennessee. We were selected for our &quot;vital skills necessary for a self-sustaining program.&quot;",
+          section: "Portfolio",handler: () => {
+              window.location.href = "/portfolio/awards/entrepreneurship.html";
             },},{id: "portfolio-2016-media-and-technology-award-sponsored-by-comcast-nbcuniversal",
           title: '2016 Media and Technology Award sponsored by Comcast NBCUniversal',
           description: "My high school robotics team, the L&amp;N STEMpunks, was chosen for the 2016 Media &amp; Technology Award out of 3,000 teams. I established the team’s media presence as a student and was a mentor when we won the award.",
@@ -106,6 +111,11 @@ ninja.data = [{
           description: "The SMRBS is a small conference the L&amp;N STEMpunks hosted, and I was primarily in charge of organizing it in 2015 and 2016. I booked venues, made catering arrangements, and even marketed the conference to teams.",
           section: "Portfolio",handler: () => {
               window.location.href = "/portfolio/projects/Smoky%20Mountains%20Regional%20Business%20Summit.html";
+            },},{id: "portfolio-2017-amp-2018-first-robotics-competition-imagery-award",
+          title: '2017 &amp;amp; 2018 FIRST Robotics Competition Imagery Award',
+          description: "As a mentor for FIRST Robotics Competition team 3966, I helped the team maintain their brand standards and team image that contributed to the team&#39;s win of the Imagery Award at the 2017 Miami Valley Regional in Springfield, Ohio and the 2018 Smoky Mountains Regional in Knoxville, Tennessee.",
+          section: "Portfolio",handler: () => {
+              window.location.href = "/portfolio/awards/imagery.html";
             },},{id: "portfolio-knox-makers-hosts-community-makerspace-in-south-knoxville",
           title: 'Knox Makers Hosts Community “Makerspace” in South Knoxville',
           description: "A blog post and interview about  Knoxville’s local maker space that I wrote for the Knoxville Mercury while I was an intern there in the summer of 2016.",
@@ -186,6 +196,11 @@ ninja.data = [{
           description: "An article I wrote during my internship with ORNL highlighting the use of neutron scattering in investigating water filtration methods.",
           section: "Portfolio",handler: () => {
               window.location.href = "/portfolio/writing/Scientists%20at%20ESS%20Swedish%20Water%20Research.html";
+            },},{id: "portfolio-2019-breaking-away-scholarship",
+          title: '2019 Breaking Away Scholarship',
+          description: "I was awarded the Breaking Away Scholarship from the University of Tennessee&#39;s College of Communication and Information.",
+          section: "Portfolio",handler: () => {
+              window.location.href = "/portfolio/awards/2019%20Breaking%20Away%20Scholarship.html";
             },},{id: "portfolio-ut-alumnus-nicholas-bashore-turns-gaming-hobby-into-a-career",
           title: 'UT alumnus Nicholas Bashore turns gaming hobby into a career',
           description: "An article I wrote for a feature writing class at the University of Tennessee profiling alumnus Nicholas Bashore, who is now a community manager at Skillshot Media.",
