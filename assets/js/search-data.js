@@ -85,7 +85,7 @@ ninja.data = [{
           title: '2016 &amp;amp; 2017 FIRST Robotics Competition Entrepreneurship Award',
           description: "As a mentor for FIRST Robotics Competition team 3966, I helped the team put together a submission for the Entrepreneurship Award that was selected as the winner at the 2016 Rocket City Regional in Huntsville, Alabama and the 2017 Smoky Mountains Regional in Knoxville, Tennessee. We were selected for our &quot;vital skills necessary for a self-sustaining program.&quot;",
           section: "Portfolio",handler: () => {
-              window.location.href = "/portfolio/awards/entrepreneurship.html";
+              window.location.href = "/portfolio/awards/2016%20&%202017%20FIRST%20Robotics%20Competition%20Entrepreneurship%20Award.html";
             },},{id: "portfolio-2016-media-and-technology-award-sponsored-by-comcast-nbcuniversal",
           title: '2016 Media and Technology Award sponsored by Comcast NBCUniversal',
           description: "My high school robotics team, the L&amp;N STEMpunks, was chosen for the 2016 Media &amp; Technology Award out of 3,000 teams. I established the team’s media presence as a student and was a mentor when we won the award.",
@@ -115,7 +115,7 @@ ninja.data = [{
           title: '2017 &amp;amp; 2018 FIRST Robotics Competition Imagery Award',
           description: "As a mentor for FIRST Robotics Competition team 3966, I helped the team maintain their brand standards and team image that contributed to the team&#39;s win of the Imagery Award at the 2017 Miami Valley Regional in Springfield, Ohio and the 2018 Smoky Mountains Regional in Knoxville, Tennessee.",
           section: "Portfolio",handler: () => {
-              window.location.href = "/portfolio/awards/imagery.html";
+              window.location.href = "/portfolio/awards/2017%20&%202018%20FIRST%20Robotics%20Competition%20Imagery%20Award.html";
             },},{id: "portfolio-knox-makers-hosts-community-makerspace-in-south-knoxville",
           title: 'Knox Makers Hosts Community “Makerspace” in South Knoxville',
           description: "A blog post and interview about  Knoxville’s local maker space that I wrote for the Knoxville Mercury while I was an intern there in the summer of 2016.",
@@ -198,7 +198,7 @@ ninja.data = [{
               window.location.href = "/portfolio/writing/Scientists%20at%20ESS%20Swedish%20Water%20Research.html";
             },},{id: "portfolio-2019-breaking-away-scholarship",
           title: '2019 Breaking Away Scholarship',
-          description: "I was awarded the Breaking Away Scholarship from the University of Tennessee&#39;s College of Communication and Information.",
+          description: "I was awarded the Breaking Away Scholarship from the University of Tennessee&#39;s College of Communication and Information. The scholarship was established to &quot;assist students who show high standards of excellence and innovation in writing while exhibiting courage and conviction in exploring leading-edge subject matter.&quot;",
           section: "Portfolio",handler: () => {
               window.location.href = "/portfolio/awards/2019%20Breaking%20Away%20Scholarship.html";
             },},{id: "portfolio-ut-alumnus-nicholas-bashore-turns-gaming-hobby-into-a-career",
