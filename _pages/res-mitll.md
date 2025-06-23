@@ -1,6 +1,6 @@
 ---
 layout: redirect
-title: Resume MITLL
+title: Resume MIT Lincoln Laboratory
 permalink: /res-mitll/
 nav: false
 horizontal: false

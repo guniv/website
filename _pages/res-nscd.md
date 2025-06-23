@@ -1,6 +1,6 @@
 ---
 layout: redirect
-title: Resume NSCD
+title: Resume Neutron Sciences Directorate
 permalink: /res-nscd/
 nav: false
 horizontal: false

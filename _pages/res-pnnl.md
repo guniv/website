@@ -1,6 +1,6 @@
 ---
 layout: redirect
-title: Resume PNNL
+title: Resume Pacific Northwest National Laboratory
 permalink: /res-pnnl/
 nav: false
 horizontal: false
