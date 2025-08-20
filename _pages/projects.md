@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Writing
+title: Projects
 permalink: /portfolio/projects
 nav: false
 display_categories: [Projects]

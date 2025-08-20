@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Writing
+title: Awards
 permalink: /portfolio/awards
 nav: false
 display_categories: [Awards]
