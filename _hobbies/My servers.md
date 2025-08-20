@@ -20,8 +20,3 @@ Some highlights are:
 - [Umami](https://umami.is/) - This is an analytics tool, like Google Analytics, that I use on this website to track visitors and clicks.
 - [Authentik](https://goauthentik.io/) - This app lets me have a unified login experience for all of the services I run, so I don't have to remember tons of passwords.
 - [Vaultwarden](https://github.com/dani-garcia/vaultwarden) - This is a locally hosted server for Bitwarden, so I get to utilize Bitwarden and my data stays on my server.
-
-
-
-Home Assistant
-piper/whisper
