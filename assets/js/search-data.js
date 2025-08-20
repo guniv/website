@@ -343,9 +343,14 @@ ninja.data = [{
               window.location.href = "/portfolio/writing/Energy%20Storage%20@%20PNNL.html";
             },},{id: "portfolio-coolercontrol-docker",
           title: 'CoolerControl-Docker',
-          description: "I maintain the Docker container distribution of CoolerControl, an application that allows for fan control on Linux systems. It has been downloaded more than 2,500 times. I built out processes to maintain the container automatically, maintain documentation for the container, and field support issues for users.",
+          description: "In March 2025, I developed and maintained a Docker container distribution of CoolerControl, an application that allows for fan control on Linux systems. It was downloaded more than 2,500 times. I built out processes to maintain the container automatically, maintain documentation for the container, and field support issues for users. My work demonstrated the interest in this to the official developers who launched their own official container in July 2025.",
           section: "Portfolio",handler: () => {
               window.location.href = "/portfolio/projects/CoolerControl.html";
+            },},{id: "portfolio-coolercontrol-documentation-and-template",
+          title: 'CoolerControl documentation and template',
+          description: "I contributed documentation to CoolerControl for setting up the application on Unraid systems, and made a template for the Unraid community applications store. The documentation includes thorough instructions and explanations that make it easy for users of varying technical levels to set up CoolerControl.",
+          section: "Portfolio",handler: () => {
+              window.location.href = "/portfolio/projects/CoolerControl%20docs.html";
             },},{id: "portfolio-guniv-net-2025-now",
           title: 'guniv.net, 2025 - now',
           description: "My current version of the website began development in early 2025. My goal was to have more control over the site, because I like tinkering... and to avoid a yearly ~$250 bill from Squarespace.",
