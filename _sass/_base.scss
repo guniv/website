@@ -254,12 +254,23 @@ ul.task-list input[type="checkbox"] {
   background-color: var(--global-bg-color);
   border: 1px solid var(--global-divider-color);
 
-  a:not(.active) {
-    color: var(--global-text-color);
-  }
+  a,
+  .dropdown-item {
+    color: var(--global-text-color) !important;
+    
+    &.active {
+      color: var(--global-text-color) !important;
+      background-color: var(--global-hover-color);
 
-  a:hover {
-    color: var(--global-hover-color);
+      &:hover {
+        color: var(--global-text-color) !important;
+      }
+    }
+
+    &:hover {
+      color: var(--global-hover-color) !important;
+      background-color: var(--global-bg-color);
+    }
   }
 
   .dropdown-divider {
@@ -268,10 +279,10 @@ ul.task-list input[type="checkbox"] {
 }
 
 .dropdown-item {
-  color: var(--global-text-color);
+  color: var(--global-text-color) !important;
 
   &:hover {
-    color: var(--global-hover-color);
+    color: var(--global-hover-color) !important;
     background-color: var(--global-bg-color);
   }
 }
@@ -1046,15 +1057,19 @@ progress::-moz-progress-bar {
 
     &:hover {
       color: var(--global-hover-color);
+      background-color: var(--global-bg-color);
     }
   }
 
   .dropdown-item.active,
   .dropdown-item:active {
-    color: var(--global-hover-text-color) !important;
+    color: var(--global-text-color) !important;
+    background-color: var(--global-hover-color) !important;
+    font-weight: bold;
 
     &:hover {
-      color: var(--global-hover-text-color);
+      color: var(--global-text-color) !important;
+      background-color: var(--global-hover-color) !important;
     }
   }
 }
