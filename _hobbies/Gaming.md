@@ -7,12 +7,12 @@ category: Hobbies
 date: 2005-03-01
 ---
 
-I've been gaming since I was very young and it's still my favorite thing to do to relax. I play a lot of multiplayer games with friends and also enjoy singleplayer games. Some of my favorite games of all time are (in no particular order):
+I've been gaming since I was very young and it's still my favorite thing to do to relax. I play a lot of multiplayer games with friends and also enjoy singleplayer games. I enjoy games from the following studios:
 
-- Garry's Mod
-- Overwatch 2
-- Team Fortress 2
-- Project Reality
-- Mass Effect
+- Valve Software
+- Remedy Entertainment
+- Kojima Productions
+- Bethesda Game Studios
+- Arkane Studios
 
-It's very hard keeping track of everything I've played so the list above is not exhaustive.
+It's very hard keeping track of everything I've played so the list above is not exhaustive. I especially enjoy immersive sim games.
