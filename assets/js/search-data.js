@@ -356,6 +356,11 @@ ninja.data = [{
           description: "My current version of the website began development in early 2025. My goal was to have more control over the site, because I like tinkering... and to avoid a yearly ~$250 bill from Squarespace.",
           section: "Portfolio",handler: () => {
               window.location.href = "/portfolio/projects/guniv.net%202025-now.html";
+            },},{id: "portfolio-protect-the-dolls",
+          title: 'Protect the Dolls',
+          description: "I helped in the creation of this &quot;Dollunteering&quot; social media campaign to promote inclusivity and awareness around transgender rights issues. I provided technical support around setting up the website and domain and helped track analytics from the campaign. I also helped when the campaign evolved from just providing a design for a t-shirt to also offering the shirts for sale as well as offering resources for voters.",
+          section: "Portfolio",handler: () => {
+              window.location.href = "/portfolio/projects/Protect%20the%20Dolls.html";
             },},{
       id: 'light-theme',
       title: 'Change theme to light',
