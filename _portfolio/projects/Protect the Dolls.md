@@ -6,6 +6,7 @@ img: assets/img/projects/dollunteering.jpg
 redirect: https://dollunteering.org
 category: Projects
 date: 2026-09-24
+featured: true
 ---
 
 https://dollunteering.org

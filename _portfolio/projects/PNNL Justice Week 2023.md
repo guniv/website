@@ -6,7 +6,6 @@ img: assets/img/projects/justiceweek.png
 redirect: https://www.pnnl.gov/justice-week
 category: Projects
 date: 2023-10-30
-featured: true
 ---
 
 https://www.pnnl.gov/justice-week
