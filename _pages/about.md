@@ -44,13 +44,13 @@ I also have experience in content strategy, project management, technical writin
 <!-- Inline Testimonials -->
 <script>
   const testimonials = [
-    { "quote": "Josh did a wonderful job at getting me up to speed… he kept track of all of our stories and was good at leading the team.", "author": "Riley Brunner, Video Content Producer, Jumo Health" },
-    { "quote": "Josh [brought] critical technical abilities to our digital work, frequently suggesting ways to do our work more effectively or efficiently.", "author": "Jamie Lonie, Digital Media Marketing Specialist, Global Business Coalition for Education" },
-    { "quote": "[Josh] hit the ground running and was able to help us create successful new social media content and campaigns from the get go.", "author": "Francois Servranckx, Environmental, Social and Governance (ESG) Communcications Lead, Guardian Life" },
+    { "quote": "Josh did a wonderful job at getting me up to speed… he kept track of all of our stories and was good at leading the team.", "author": "Riley Brunner, Senior Video Producer and Editor, Jumo Health" },
+    { "quote": "Josh [brought] critical technical abilities to our digital work, frequently suggesting ways to do our work more effectively or efficiently.", "author": "Jamie Lonie, Founder, Amplifi Digital" },
+    { "quote": "[Josh] hit the ground running and was able to help us create successful new social media content and campaigns from the get go.", "author": "Francois Servranckx, Head of Communications, Global Business Coalition for Education" },
     { "quote": "A valuable contributor to the team and a talented writer.", "author": "Wendy Hames, Senior Technical Editor, Oak Ridge National Laboratory" },
-    { "quote": "Josh has an excellent ability to devise a vision for a team and then develop an action plan to see that vision enacted.", "author": "Rachel Ellestad, Associate Dean for Student Success, University of Minnesota Duluth" },
+    { "quote": "Josh has an excellent ability to devise a vision for a team and then develop an action plan to see that vision enacted.", "author": "Rachel Ellestad, Director of Engineering Fundamentals, University of Tennessee, Knoxville" },
     { "quote": "Anyone looking for a dedicated and experienced writer would do well to consider Josh.", "author": "Paul Boisvert, Senior Science Writer, Oak Ridge National Laboratory" },
-    { "quote": "Any organization Josh leads I'm confident will have great internal communication and delegation.", "author": "Ben Klein, Director of Engineering, Swiftly" },
+    { "quote": "Any organization Josh leads I'm confident will have great internal communication and delegation.", "author": "Ben Klein, Principal Software Engineer, Swiftly" },
     { "quote": "Josh is highly organized, dedicated, business-minded, and exceptionally tech-savvy.", "author": "Randy Brown, Senior Software Developer, Agilaire" }
   ];
 
