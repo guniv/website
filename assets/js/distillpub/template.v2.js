@@ -2695,6 +2695,9 @@ d-citation-list .references .title {
           var rest = grammar.rest;
           if (rest) {
             for (var token in rest) {
+              if (token === "__proto__" || token === "constructor" || token === "prototype") {
+                continue;
+              }
               grammar[token] = rest[token];
             }
 
@@ -3087,7 +3090,7 @@ d-citation-list .references .title {
       comment: /<!--[\s\S]*?-->/,
       prolog: /<\?[\s\S]+?\?>/,
       doctype: {
-        pattern: /<!DOCTYPE(?:[^>"'[\]]|"[^"]*"|'[^']*')+(?:\[(?:(?!<!--)[^"'\]]|"[^"]*"|'[^']*'|<!--[\s\S]*?-->)*\]\s*)?>/i,
+        pattern: /<!DOCTYPE(?:[^>"'[\]]|"[^"]*"|'[^']*')+(?:\[(?:(?!<!--)[^"'\]]|"[^"]*"|'[^']*'|<!--(?:[^-]|-(?!->))*-->)*\]\s*)?>/i,
         greedy: true,
       },
       cdata: /<!\[CDATA\[[\s\S]*?]]>/i,
@@ -3170,7 +3173,8 @@ d-citation-list .references .title {
         var def = {};
         def[tagName] = {
           pattern: RegExp(
-            /(<__[\s\S]*?>)(?:<!\[CDATA\[[\s\S]*?\]\]>\s*|[\s\S])*?(?=<\/__>)/.source.replace(/__/g, function () {
+            /(<__[\s\S]*?>)(?:(?:<!\[CDATA\[[\s\S]*?\]\]>\s*)|(?:[^<]+|<(?!\!\[CDATA\[)))*?(?=<\/__>)/.source.replace(/__/g, function () {
+            /(<__[\s\S]*?>)(?:(?:<!\[CDATA\[(?:(?!\]\]>)[\s\S])*\]\]>\s+)|(?:<(?!\!\[CDATA\[)|[^<]))*?(?=<\/__>)/.source.replace(/__/g, function () {
               return tagName;
             }),
             "i"
@@ -3330,7 +3334,7 @@ d-citation-list .references .title {
     Prism.languages.insertBefore("javascript", "keyword", {
       regex: {
         pattern:
-          /((?:^|[^$\w\xA0-\uFFFF."'\])\s])\s*)\/(?:\[(?:[^\]\\\r\n]|\\.)*]|\\.|[^/\\\[\r\n])+\/[gimyus]{0,6}(?=(?:\s|\/\*[\s\S]*?\*\/)*(?:$|[\r\n,.;:})\]]|\/\/))/,
+          /((?:^|[^$\w\xA0-\uFFFF."'\])\s])\s*)\/(?:\[(?:[^\]\\\r\n]|\\.)*]|\\.|[^/\\\[\r\n])+\/[gimyus]{0,6}(?=(?:\s|\/\*[^*]*\*+(?:[^/*][^*]*\*+)*\/)*(?:$|[\r\n,.;:})\]]|\/\/))/,
         lookbehind: true,
         greedy: true,
       },
@@ -4235,7 +4239,7 @@ ${css}
 
       if (this.hasAttribute("block")) {
         // normalize the tab indents
-        content = content.replace(/\n/, "");
+        content = content.replace(/\n/g, "");
         const tabs = content.match(/\s*/);
         content = content.replace(new RegExp("\n" + tabs, "g"), "\n");
         content = content.trim();
@@ -4681,17 +4685,28 @@ d-references {
       const title = el.textContent;
       const link = "#" + el.getAttribute("id");
 
-      let newLine = "<li>" + '<a href="' + link + '">' + title + "</a>" + "</li>";
+      const li = document.createElement("li");
+      const a = document.createElement("a");
+      a.setAttribute("href", link);
+      a.textContent = title;
+      li.appendChild(a);
+
       if (el.tagName == "H3") {
-        newLine = "<ul>" + newLine + "</ul>";
+        const nested = document.createElement("ul");
+        nested.appendChild(li);
+        element.querySelector("ul").appendChild(nested);
       } else {
-        newLine += "<br>";
+        element.querySelector("ul").appendChild(li);
+        element.querySelector("ul").appendChild(document.createElement("br"));
       }
-      ToC += newLine;
     }
 
-    ToC += "</ul></nav>";
+    // Keep existing static wrapper/style markup behavior
     element.innerHTML = ToC;
+    const tocList = element.querySelector("ul");
+    if (tocList) {
+      tocList.replaceChildren(...tocList.childNodes);
+    }
   }
 
   // Copyright 2018 The Distill Template Authors
