@@ -5,3 +5,4 @@ paths-ignore:
   - "_scripts/google-analytics-setup.js"
   - "_scripts/photoswipe-setup.js"
   - "_scripts/search.liquid.js"
+  - "assets/js/distillpub/template.v2.js"
