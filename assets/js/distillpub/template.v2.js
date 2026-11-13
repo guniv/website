@@ -4681,17 +4681,28 @@ d-references {
       const title = el.textContent;
       const link = "#" + el.getAttribute("id");
 
-      let newLine = "<li>" + '<a href="' + link + '">' + title + "</a>" + "</li>";
+      const li = document.createElement("li");
+      const a = document.createElement("a");
+      a.setAttribute("href", link);
+      a.textContent = title;
+      li.appendChild(a);
+
       if (el.tagName == "H3") {
-        newLine = "<ul>" + newLine + "</ul>";
+        const nested = document.createElement("ul");
+        nested.appendChild(li);
+        element.querySelector("ul").appendChild(nested);
       } else {
-        newLine += "<br>";
+        element.querySelector("ul").appendChild(li);
+        element.querySelector("ul").appendChild(document.createElement("br"));
       }
-      ToC += newLine;
     }
 
-    ToC += "</ul></nav>";
+    // Keep existing static wrapper/style markup behavior
     element.innerHTML = ToC;
+    const tocList = element.querySelector("ul");
+    if (tocList) {
+      tocList.replaceChildren(...tocList.childNodes);
+    }
   }
 
   // Copyright 2018 The Distill Template Authors
